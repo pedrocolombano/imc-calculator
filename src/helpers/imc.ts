@@ -1,4 +1,4 @@
-type BMILevel = {
+export type BMILevel = {
     title: string;
     color: string;
     icon: "down" | "up";
@@ -7,10 +7,10 @@ type BMILevel = {
 }
 
 export const BMI_LEVELS: Array<BMILevel> = [
-    {title : "Abaixo do peso", color: "#96A3AB", icon: "down", maxValue: 18.5},
-    {title : "Normal", color: "#0EAD69", icon: "up", maxValue: 24.9},
-    {title : "Sobrepeso", color: "#E2B036", icon: "down", maxValue: 30},
-    {title : "Obesidade", color: "#C3423F", icon: "down", maxValue: 99}
+    { title: "Abaixo do peso", color: "#96A3AB", icon: "down", maxValue: 18.5 },
+    { title: "Normal", color: "#0EAD69", icon: "up", maxValue: 24.9 },
+    { title: "Sobrepeso", color: "#E2B036", icon: "down", maxValue: 30 },
+    { title: "Obesidade", color: "#C3423F", icon: "down", maxValue: 99 }
 ];
 
 export const calculateImc = (height: number, weight: number): BMILevel | null => {

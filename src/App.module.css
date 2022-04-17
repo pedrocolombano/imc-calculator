@@ -11,8 +11,3 @@ body {
     max-width: 900px;
     margin: auto;
 }
-
-.rightSide {
-    flex: 1;
-    margin-left: 40px;
-}
