@@ -1,6 +1,7 @@
 import styles from './App.module.css'
 
 import { Header } from './components/Header';
+import { LeftSide } from './components/LeftSide';
 
 export const App = () => {
 
@@ -8,9 +9,7 @@ export const App = () => {
     <div className={styles.main}>
       <Header />
       <div className={styles.container}>
-        <div className={styles.leftSide}>
-          ...
-        </div>
+        <LeftSide />
         <div className={styles.rightSide}>
           ...
         </div>

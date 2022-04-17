@@ -12,11 +12,6 @@ body {
     margin: auto;
 }
 
-.leftSide {
-    flex: 1;
-    margin-right: 40px;
-}
-
 .rightSide {
     flex: 1;
     margin-left: 40px;
