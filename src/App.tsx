@@ -1,8 +1,20 @@
-import './App.css'
+import styles from './App.module.css'
+
+import { Header } from './components/Header';
 
 export const App = () => {
 
   return (
-    <h1>Hello world!</h1>
+    <div className={styles.main}>
+      <Header />
+      <div className={styles.container}>
+        <div className={styles.leftSide}>
+          ...
+        </div>
+        <div className={styles.rightSide}>
+          ...
+        </div>
+      </div>
+    </div>
   );
 }
