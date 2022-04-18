@@ -1,4 +1,4 @@
-import styles from './styles.module.css';
+import styles from './Header.module.css';
 import poweredImage from '../../assets/powered.png';
 
 export const Header = () => {

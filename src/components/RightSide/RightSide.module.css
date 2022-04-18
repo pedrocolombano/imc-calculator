@@ -1,0 +1,40 @@
+.rightSide {
+    flex: 1;
+    margin-left: 40px;
+    display: flex;
+}
+
+.grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.largeIcon {
+    flex: 1;
+    display: flex;
+}
+
+.largeIcon img {
+    width: 30px;
+}
+
+.arrow {
+    position: absolute;
+    background-color: #227C9D;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: -35px;
+    margin-top: 145px;
+    transition: all ease 0.3s;
+}
+
+.arrow:hover {
+    opacity: 0.92;
+}

@@ -1,21 +1,4 @@
-.leftSide {
-    flex: 1;
-    margin-right: 40px;
-}
-
-.leftSide h1 {
-    margin: 0px;
-    font-size: 40px;
-    color: #3A4B5C;
-}
-
-.leftSide p {
-    font-size: 16px;
-    margin-bottom: 40px;
-    color: #6A7D8B;
-}
-
-.leftSide input {
+.form input {
     width: 100%;
     border: 0px;
     border-bottom: 2px solid rgba(150, 163, 171, 0.5);
@@ -25,7 +8,7 @@
     outline: 0px;
 }
 
-.leftSide button {
+.form button {
     background-color: #227C9D;
     color: #FFF;
     font-size: 15px;
@@ -38,6 +21,6 @@
     transition: all ease 0.4s;
 }
 
-.leftSide button:hover {
+.form button:hover {
     opacity: 0.8;
 }

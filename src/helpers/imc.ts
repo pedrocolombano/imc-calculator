@@ -17,12 +17,13 @@ export const BMI_LEVELS: Array<BMILevel> = [
 export const calculateImc = (height: number, weight: number): BMILevel | null => {
     const imc = weight / (height * height);
 
-    BMI_LEVELS.forEach(level => {
+    for (let level of BMI_LEVELS) {
         if (imc <= level.maxValue) {
-            level.yourBmi = imc;
-            return level;
+            let levelCopy: BMILevel = {...level};
+            levelCopy.yourBmi = parseFloat(imc.toFixed(1));
+            return levelCopy;
         }
-    });
+    }
 
     return null;
 }
