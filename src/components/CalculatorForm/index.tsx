@@ -4,6 +4,7 @@ import { useState } from "react";
 import { BMILevel } from "../../helpers/imc";
 
 import { calculateImc } from "../../helpers/imc";
+import { customNotification } from "../../utils/toast";
 
 type Props = {
     setDisplayedItem: (level: BMILevel | null) => void;
@@ -25,8 +26,9 @@ export const CalculatorForm = (props: Props) => {
         if (heightField && weightField) {
             props.setDisplayedItem(calculateImc(heightField, weightField));
             clearInputs();
+            customNotification({ message: "IMC calculado com sucesso", type: "success"});
         } else {
-            alert("Preencha os campos.");
+            customNotification({ message: "Preencha os campos", type: "error"});
         }
     }
 

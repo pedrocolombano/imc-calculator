@@ -4,8 +4,11 @@ import styles from './App.module.css'
 import { Header } from './components/Header';
 import { LeftSide } from './components/LeftSide';
 import { RightSide } from './components/RightSide';
+import { ToastContainer } from 'react-toastify';
 
 import { BMILevel, BMI_LEVELS } from './helpers/imc';
+
+import "react-toastify/dist/ReactToastify.min.css";
 
 export const App = () => {
   const [displayedItem, setDisplayedItem] = useState<BMILevel | null>(null);
@@ -25,6 +28,8 @@ export const App = () => {
         <LeftSide setDisplayedItem={handleBmiCalculation} />
         <RightSide clearItem={clearItem} displayedItem={displayedItem} levels={BMI_LEVELS} />
       </div>
+
+      <ToastContainer />
     </div>
   );
 }
